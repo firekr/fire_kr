@@ -1,8 +1,9 @@
-# fire_kr
+行情数据
+行情数据主要是显示各个交易平台中数字货币的实时价格。为了给各个项目提供更全面的数据支持，现支持币种（项目）的详情。具体字段见图3   数据 
 2．接口概述
 2.1．根据平台名查询币币交易列表
 （1）请求路径URL ：
-http://47.52.210.186:9081/restful/{version}/getMarketByPName/{platformName}/{queryType}
+http://www.hskjs.com/restful/{version}/getMarketByPName/{platformName}/{queryType}
 请求数据说明：
 version:版本号，目前是v1版本
 platformName:平台名称，如huobi
@@ -17,7 +18,7 @@ queryType:排序条件
 7.按最新价倒序
 8.按最新价升序）
 举例：
-http://47.52.210.186:9081/restful/v1/getMarketByPName/huobi/1
+http://www.hskjs.com/restful/v1/getMarketByPName/huobi/1
 （2）正确返回数据：
 窗体顶端
 {
@@ -110,7 +111,7 @@ code     	状态码
 
 2.2．根据币种名称查各平台此币种行情
 （1）请求URL：
-http://47.52.210.186:9081/{version}/getMarketByCoin/{coinName}/{queryType}
+http://www.hskjs.com/{version}/getMarketByCoin/{coinName}/{queryType}
 
 请求数据说明：
 version:版本号，目前是v1版本
@@ -183,13 +184,13 @@ http://47.52.210.186:9081/restful/v1/getMarketByCoin/btc/1
 请参考表1，表2，表3
 2.3．查询单个币种行情
 （1）请求URL：
-http://47.52.210.186:9081/{version}/getMarket/{platformName}/{coinName}
+http://www.hskjs.com/{version}/getMarket/{platformName}/{coinName}
 请求数据说明：
 version:版本号，目前是v1版本
 platformName:平台名称，如huobi
 coinName:币名
 举例：
-http://47.52.210.186:9081/restful/v1/getMarket/huobi/btc
+http://www.hskjs.com/restful/v1/getMarket/huobi/btc
 （2）正确返回数据：
 窗体顶端
 {
